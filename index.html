@@ -10,6 +10,21 @@
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 20px;
       grid-column-gap: 18px;
+      position: relative;
+    }
+    .shadow {
+      display: inline-block;
+    }
+    .shadow-content {
+      position: relative;
+      display: none;
+      background-color: white;
+      z-index: 1;
+      padding: 0;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2)
+    }
+    .shadow:hover .shadow-content {
+      display: block;
     }
   </style>
 </head>
@@ -35,11 +50,24 @@
     </stan>
   </ul>
   <h1><a href="index.html">아쿠스 Aqus</a></h1>
-  <div id="grid">
-    <a href="Aqus.html"><img src="Aqus.png" alt="아쿠스11Y"></a>
-    <img src="전신 대용.jpg" alt="아쿠스16Y">
-    <img src="전신 대용.jpg" alt="아쿠스21Y">
-  </div>
+  <stan id="grid">
+    <stan class="shadow">
+      <a href="Aqus.html"><img src="Aqus.png" alt="아쿠스11Y"></a>
+      <stan class="shadow-content">
+        <a href="Aqus.html"><img src="Aqus.png" alt="아쿠스11Y"></a>
+      </stan>
+    </stan>
+    <stan class="shadow">
+      <img src="전신 대용.jpg" alt="아쿠스16Y">
+      <stan class="shadow-content">
+        <a href="#"><img src="#" alt="아쿠스16Y"></a>
+      </stan>
+    </stan>
+      <img src="전신 대용.jpg" alt="아쿠스21Y">
+      <stan class="shadow-content">
+        <a href="#"><img src="#" alt="아쿠스16Y"></a>
+      </stan>
+  </stan>
   <p>
     &copy2020 Aqus Owner All rights reserved
   </p>

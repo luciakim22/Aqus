@@ -1,4 +1,4 @@
-@media(max-width: 1536px) {
+@media(min-width: 1500px) {
   body {
     margin-left: 320px;
     margin-right: 320px;
@@ -38,15 +38,8 @@
   padding-right: 40px;
   margin-top:0;
 }
-.notactive {
-  color: grey;
-}
 .page {
   padding: 150px;
-}
-.list {
-  border-right: 1px dotted grey;
-  padding-left: 150px;
 }
 .hl {
   margin-top:5px;
@@ -67,8 +60,8 @@
   display: none;
   position: absolute;
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 71.787px;
+  height: 71.787px;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
@@ -83,32 +76,106 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+ul {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  padding: 0;
+  font-family: sans-serif
+}
+ul nav {
+    list-style: none;
+}
+ul nav a {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1;
+}
+ul nav a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: .3s;  }
+ul nav a:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: scale(0);
+  opacity: 0;
+  transition: .3s;
+  z-index: -1;
+}
+ul nav a:hover {
+  color: #fff;
+}
+ul nav a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+ul nav a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+
+/*
 ul stan {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-li a {
+nav a {
   display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover {
+nav a:hover {
   color: white;
   background-color: black;
 }
+*/
 p {
   font-size: 14px;
   line-height: 160%;
+  margin: 10px 0;
 }
 h1 {
   font-size: 25px;
   border-bottom: 1px solid black;
   padding-top: 40px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   margin-bottom: 0;
+  margin-top:80px;
 }
 h2 {
   font-size: 22px;
@@ -130,8 +197,4 @@ a {
 img {
   max-width: 100%;
   max-height: 100%;
-}
-ul {
-  padding: 0;
-  text-align: left;
 }

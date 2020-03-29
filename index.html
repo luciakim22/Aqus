@@ -12,8 +12,19 @@
       grid-column-gap: 18px;
       position: relative;
     }
+    .btn {
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 1
+    }
+    div img {
+      background-color: grey;
+    }
+    /*
     .shadow {
-      display: inline-block;
+      display: block;
     }
     .shadow-content {
       position: relative;
@@ -26,48 +37,58 @@
     .shadow:hover .shadow-content {
       display: block;
     }
+    */
   </style>
 </head>
 <body>
   <ul>
-    <stan class="dropdown">
-      <li><a href="Aqus.html">11Y</a></li>
-      <stan class="dropdown-content">
+    <span class="dropdown">
+      <nav><a href="Aqus.html">11Y</a></nav>
+      <span class="dropdown-content">
         <a href="Aqus.html"><img src="아쿠스_인장.png" alt="Aqus11"></a>
-      </stan>
-    </stan>
-    <stan class="dropdown">
-      <li><a href="#">16Y</a></li>
-      <stan class="dropdown-content">
+      </span>
+    </span>
+    <span class="dropdown">
+      <nav><a href="#">16Y</a></nav>
+      <span class="dropdown-content">
         <a href="#"><img src="test.jpg" alt="Aqus16"></a>
-      </stan>
-    </stan>
-    <stan class="dropdown">
-      <li><a href="#">21Y</a></li>
-      <stan class="dropdown-content">
+      </span>
+    </span>
+    <span class="dropdown">
+      <nav><a href="#">21Y</a></nav>
+      <span class="dropdown-content">
         <a href="#"><img src="test.jpg" alt="Aqus21"></a>
-      </stan>
-    </stan>
+      </span>
+    </span>
   </ul>
   <h1><a href="index.html">아쿠스 Aqus</a></h1>
-  <stan id="grid">
-    <stan class="shadow">
+  <div id="grid">
+    <a href="Aqus.html"><img class="btn" src="Aqus.png" alt="아쿠스11Y"></a>
+    <img class="btn" src="전신 대용.png" alt="아쿠스16Y">
+    <img class="btn" src="전신 대용.png" alt="아쿠스21Y">
+  </div>
+  <!--
+  <span id="grid">
+    <span class="shadow">
       <a href="Aqus.html"><img src="Aqus.png" alt="아쿠스11Y"></a>
-      <stan class="shadow-content">
+      <span class="shadow-content">
         <a href="Aqus.html"><img src="Aqus.png" alt="아쿠스11Y"></a>
-      </stan>
-    </stan>
-    <stan class="shadow">
+      </span>
+    </span>
+    <span class="shadow">
       <img src="전신 대용.jpg" alt="아쿠스16Y">
-      <stan class="shadow-content">
-        <a href="#"><img src="#" alt="아쿠스16Y"></a>
-      </stan>
-    </stan>
+      <span class="shadow-content">
+        <a href="#"><img src="전신 대용.jpg"></a>
+      </span>
+    </span>
+    <span class="shadow">
       <img src="전신 대용.jpg" alt="아쿠스21Y">
-      <stan class="shadow-content">
-        <a href="#"><img src="#" alt="아쿠스16Y"></a>
-      </stan>
-  </stan>
+      <span class="shadow-content">
+        <a href="#"><img src="전신 대용.jpg"></a>
+      </span>
+    </span>
+  </span>
+  -->
   <p>
     &copy2020 Aqus Owner All rights reserved
   </p>
